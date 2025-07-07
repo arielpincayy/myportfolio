@@ -155,9 +155,17 @@ export default function Portfolio() {
               <ProjectCard 
               title="Blog Page Bckend"
               description="A full-stack blog manager"
-              tags={["Falsk","Python","SQLAlchemy","Postgres","Docker"]}
+              tags={["Flask","Python","SQLAlchemy","Postgres","Docker"]}
               link="https://github.com/arielpincayy/backend_blogpage"
               state={false}
+              />
+
+              <ProjectCard 
+              title="'Carrera de Educación Básica en Línea' University Page"
+              description="A full-stack informative Page"
+              tags={["Next.js", "TypeScript", "Tailwind CSS", "Firebase"]}
+              link="https://ei-unemi-dvv9evzlv-arielpincays-projects.vercel.app/"
+              state={true}
               />
             </div>
           </div>
