@@ -48,7 +48,7 @@ export default function Portfolio() {
                     Hi, I'm Ariel Pincay
                   </h1>
                   <p className="text-xs md:text-xl text-muted-foreground">
-                    Full-Stack and Machine Learning Developer.
+                    Computer Engineering Student | Full-Stack & ML Developer
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -68,11 +68,11 @@ export default function Portfolio() {
                   </Button>
                 </div>
                 <div className="flex gap-4">
-                  <Link href="https://github.com/arielpincayy" className="text-muted-foreground hover:text-foreground">
+                  <Link href="https://github.com/arielpincayy" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
                     <Github className="h-5 w-5" />
                     <span className="sr-only">GitHub</span>
                   </Link>
-                  <Link href="www.linkedin.com/in/ariel-pincay-08a307191" className="text-muted-foreground hover:text-foreground">
+                  <Link href="https://linkedin.com/in/ariel-pincay-perez" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
                     <Linkedin className="h-5 w-5" />
                     <span className="sr-only">LinkedIn</span>
                   </Link>
@@ -96,29 +96,39 @@ export default function Portfolio() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Me</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I'm a passionate developer interested in web development, specialized in Next.js. I also have strong knowledge in Data Science, Machine Learning, Evolutionary Algorithms, Numerical Analysis, and more.
+                  Computer Engineering student at Yachay Tech University (9th semester), with hands-on experience in machine learning, evolutionary algorithms, numerical analysis, and full-stack web development. Passionate about bridging theoretical computation with real-world scientific and engineering applications.
                 </p>
               </div>
-              <div className="w-full max-w-full space-y-4">
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                  <div className="space-y-2">
-                    <h3 className="text-xl font-bold">Education</h3>
+              <div className="w-full max-w-full space-y-4 pt-10">
+                <div className="flex flex-col md:flex-row gap-4 justify-around">
+                  <div className="space-y-2 w-full md:w-1/4">
+                    <h3 className="text-xl font-bold text-center">Education</h3>
                     <p className="text-muted-foreground">
-                      Currently Studying Computer Science at <br />YachayTech University
+                      <span className="font-semibold text-foreground">Bachelor of Science in Computer Engineering (9th Semester)</span><br />
+                      Yachay Tech University
+                      <br />
+                      <span className="text-sm mt-2 block">Relevant coursework: Machine and Deep Learning, Numerical Analysis, Parallel Computing, Algorithms, Data Structures</span>
                     </p>
                   </div>
                   <div className="space-y-2">
-                    <h3 className="text-xl font-bold">Experience</h3>
-                    <p className="text-muted-foreground">
-                      Research Assistant
-                      <br />
-                      May,2025 - Present
-                    </p>
-                    <p className="text-muted-foreground">
-                      Member of Tuto-U Startup
-                      <br />
-                      2024 - Present
-                    </p>
+                    <h3 className="text-xl font-bold text-center">Experience</h3>
+                    <div className="space-y-4">
+                      <p className="text-muted-foreground">
+                        <span className="font-semibold text-foreground">Research Assistant – Protein Design Project</span>
+                        <br />
+                        Yachay Tech University (Sep 2025 - Nov 2025)
+                      </p>
+                      <p className="text-muted-foreground">
+                        <span className="font-semibold text-foreground">Frontend Developer</span>
+                        <br />
+                        Tuto-U Startup (Jun 2024 - Dec 2024)
+                      </p>
+                      <p className="text-muted-foreground">
+                        <span className="font-semibold text-foreground">Web Developer</span>
+                        <br />
+                        Compufest YachayTech (Feb 2025 - May 2025)
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -140,24 +150,8 @@ export default function Portfolio() {
               title="Tuto-U"
               description="A full-stack e-learning solution for managing tutoring services within universities."
               tags={["Next.js","TypeScript","Tailwind CSS"]}
-              link="https://tutou.app"
+              link="https://www.tutou.app/"
               state={true}
-              />
-
-              <ProjectCard 
-              title="Blog Page Frontend"
-              description="A full-stack blog manager"
-              tags={["Next.js","TypeScript","Tailwind CSS","MDX"]}
-              link="https://github.com/arielpincayy/frontend_blogpage"
-              state={false}
-              />
-
-              <ProjectCard 
-              title="Blog Page Bckend"
-              description="A full-stack blog manager"
-              tags={["Flask","Python","SQLAlchemy","Postgres","Docker"]}
-              link="https://github.com/arielpincayy/backend_blogpage"
-              state={false}
               />
 
               <ProjectCard 
@@ -167,6 +161,15 @@ export default function Portfolio() {
               link="https://ei-unemi-dvv9evzlv-arielpincays-projects.vercel.app/"
               state={true}
               />
+
+              <ProjectCard 
+              title="Compufest"
+              description="A full-stack informative Page for Compufest YachayTech"
+              tags={["Next.js", "TypeScript", "Tailwind CSS", "PostgreSql", "Docker", "NGINX"]}
+              link="https://compufest.yachaytech.edu.ec/"
+              state={true}
+              />
+
             </div>
           </div>
         </section>
@@ -181,58 +184,42 @@ export default function Portfolio() {
               </div>
               <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <SkillCard
-                  title="Frontend Development"
+                  title="Languages & Frameworks"
                   skills={[
-                    "React.js",
-                    "Next.js",
+                    "Python",
+                    "C/C++",
                     "JavaScript",
                     "TypeScript",
-                    "HTML",
-                    "CSS",
-                    "Responsive Design",
-                  ]}
-                />
-                <SkillCard
-                  title="Backend Development"
-                  skills={[
+                    "React.js",
+                    "Next.js",
                     "Node.js",
                     "Flask",
-                    "Python",
-                    "C",
-                    "C++",
-                    "RESTful APIs",
+                    "LangChain",
+                    "LangGraph",
+                    "Ollama",
+                    "PyTorch",
+                    "TensorFlow",
+                    "deap"
                   ]}
                 />
                 <SkillCard
-                  title="Databases & DevOps"
+                  title="Web & DevOps"
                   skills={[
-                    "SQL",
-                    "NoSQL",
-                    "MongoDB",
-                    "PostgreSQL",
+                    "HTML5 / CSS3",
+                    "Git",
                     "Docker",
-                    "Nginx",
-                    "Bash",
+                    "CUDA",
                   ]}
                 />
                 <SkillCard
-                  title="Scientific & ML"
+                  title="Research Interests"
                   skills={[
-                    "MATLAB",
-                    "Numerical Analysis",
                     "Machine Learning",
                     "Evolutionary Algorithms",
-                    "Data Science",
-                  ]}
-                />
-                <SkillCard
-                  title="Tools & Collaboration"
-                  skills={[
-                    "Git",
-                    "GitHub",
-                    "Jira",
-                    "Notion",
-                    "Agile/Scrum",
+                    "High Performance Computing",
+                    "Scientific Computing",
+                    "Numerical Analysis",
+                    "Natural Language Processing",
                   ]}
                 />
               </div>
@@ -261,7 +248,7 @@ export default function Portfolio() {
                     <Linkedin className="h-6 w-6" />
                     <div className="text-left">
                       <h3 className="font-medium">LinkedIn</h3>
-                      <p className="text-sm text-muted-foreground">linkedin.com/in/ariel-pincay-08a307191</p>
+                      <p className="text-sm text-muted-foreground">linkedin.com/in/ariel-pincay-perez</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -279,13 +266,13 @@ export default function Portfolio() {
       </main>
       <footer className="w-full border-t py-6">
         <div className="container flex flex-col items-center justify-center gap-4 m-auto px-4 md:px-6 md:flex-row md:justify-between">
-          <p className="text-sm text-muted-foreground">© 2025 Ariel Pincay. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">© 2026 Ariel Pincay. All rights reserved.</p>
           <div className="flex gap-4">
-            <Link href="https://github.com/arielpincayy" className="text-muted-foreground hover:text-foreground">
+            <Link href="https://github.com/arielpincayy" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </Link>
-            <Link href="www.linkedin.com/in/ariel-pincay-08a307191" className="text-muted-foreground hover:text-foreground">
+            <Link href="https://linkedin.com/in/ariel-pincay-perez" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
@@ -303,7 +290,7 @@ function ProjectCard({ title, description, tags, link, state }:{ title:string, d
       <CardContent className="p-4">
         <h3 className="font-bold text-xl mb-2">{title}</h3>
         <p className="text-muted-foreground mb-4">{description}</p>
-        <p><span className="font-bold">Satate: </span>{state?"Finished":"In progress"}</p>
+        <p><span className="font-bold">State: </span>{state?"Finished":"In progress"}</p>
         <div className="flex flex-wrap gap-2 mt-2">
         {tags.map((tag) => (
           <span key={tag} className="bg-muted text-muted-foreground text-xs px-2 py-1 rounded-full">
