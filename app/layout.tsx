@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "I'm Ariel Pincay",
   description: "Personal Ariel Pincay's portfolio.",
+  other: {
+    google: "notranslate",
+  },
 };
 
 export default function RootLayout({
