@@ -34,6 +34,15 @@ const EXPERIENCE = [
   },
 ];
 
+const PRESENTATIONS = [
+  {
+    role: "Speaker – Numerical Analysis Session",
+    event: "VI Jornadas Ecuatorianas de Matemática, ESPOCH 2024 — Virtual",
+    date: "Nov 2024",
+    description: "Presented research: “Comparison of Explicit and Implicit Finite Difference Methods for Solving the Wave Equation”. Demonstrated expertise in numerical methods and computational mathematics.",
+  },
+];
+
 export default function AboutSection() {
   const [visible, setVisible] = useState(false);
 
@@ -118,6 +127,32 @@ export default function AboutSection() {
                     <div className="font-bold mb-0.5 text-term-text">{exp.role}</div>
                     <div className="text-term-red">{exp.place}</div>
                     <div className="mt-0.5 text-term-muted">{exp.period}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Presentations */}
+          <div className="rounded border border-term-border bg-term-card p-4 md:p-5 text-xs md:text-sm md:col-span-2">
+            <div className="flex items-center gap-2 mb-3 pb-2 border-b border-term-border">
+              <span className="text-term-green">▸</span>
+              <span className="font-bold text-term-blue">ACADEMIC PRESENTATIONS</span>
+            </div>
+
+            <div className="flex gap-2 mb-3">
+              <span className="text-term-blue">$</span>
+              <span className="text-term-text">cat talks.md</span>
+            </div>
+
+            <div className="space-y-4">
+              {PRESENTATIONS.map((pres, i) => (
+                <div key={i} className="pl-1 border-l border-term-border-subtle">
+                  <div className="pl-3">
+                    <div className="font-bold mb-0.5 text-term-text">{pres.role}</div>
+                    <div className="text-term-red">{pres.event}</div>
+                    <div className="mt-0.5 text-term-muted mb-1">{pres.date}</div>
+                    <div className="text-term-muted">{pres.description}</div>
                   </div>
                 </div>
               ))}
